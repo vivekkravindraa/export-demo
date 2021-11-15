@@ -36,13 +36,12 @@ export default function ExportOne() {
       { key: "USER_ID", cat: "USER_ID" },
       { key: "USER_TOTAL_ACTIVE", cat: "USER_TOTAL_ACTIVE" },
       { key: "USER_TOTAL_INACTIVE", cat: "USER_TOTAL_INACTIVE" },
-      { key: "USER_TOTAL_ALL", cat: "USER_TOTAL_ALL" },
     ]);
   };
 
   return (
     <div>
-      <h4 style={{ margin: 10 }}>Export (Setting values to "selected" state which doesn't fill the multiselect-react-dropdown)</h4>
+      <h4 style={{ margin: 10 }}>Export (Setting values to "selected" state which enables all the Selected Values)</h4>
       <div style={{ margin: 10 }}>
         <label style={{ marginRight: 10 }}>Select Segment</label>
         <select onChange={(e) => handleSelectedSegment(e)}>
@@ -63,11 +62,10 @@ export default function ExportOne() {
         <Multiselect
           onSelect={onSelect}
           onRemove={onRemove}
-          disablePreSelectedValues
           options={objectArray}
           closeIcon="close"
           displayValue="key"
-          selectedValues={selectedValues}
+          selectedValues={selected}
           showCheckbox={true}
           avoidHighlightFirstOption
         />

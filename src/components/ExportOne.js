@@ -36,7 +36,6 @@ export default function ExportOne() {
       { key: "USER_ID", cat: "USER_ID" },
       { key: "USER_TOTAL_ACTIVE", cat: "USER_TOTAL_ACTIVE" },
       { key: "USER_TOTAL_INACTIVE", cat: "USER_TOTAL_INACTIVE" },
-      { key: "USER_TOTAL_ALL", cat: "USER_TOTAL_ALL" },
     ]);
   };
 
