@@ -41,7 +41,7 @@ export default function ExportOne() {
 
   return (
     <div>
-      <h4 style={{ margin: 10 }}>Export (Setting values to "selectedValues" state which disbales all the Pre Selected Values)</h4>
+      <h4 style={{ margin: 10 }}>Export (Setting values to "selectedValues" state which disables all the Pre Selected Values)</h4>
       <div style={{ margin: 10 }}>
         <label style={{ marginRight: 10 }}>Select Segment</label>
         <select onChange={(e) => handleSelectedSegment(e)}>
